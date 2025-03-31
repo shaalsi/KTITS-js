@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-1</title>
+</head>
+
+<body>
+<img src="img/photo1.jpg" alt="">
+
+    <script>
+        //1
+            let num1 = +prompt('стоимость товара');
+            let num2 = +prompt('деньги клиента');
+            if (num1 === num2) {
+                alert('Покупка совершена!');
+            } else if (num1 > num2) {
+                alert('Для покупки не хватает ' + (num1 - num2) + ' ₽');
+            } else {
+                alert('Покупка совершена! Ваша сдача: ' + (num2 - num1) + ' ₽');
+            }
+        
+        // 2
+            let num3 = +prompt('введите число');
+            if (num3 > 0) {
+                alert('1');
+            } else if (num3 < 0) {
+                alert('-1');
+            } else {
+                alert('0');
+            }
+        
+        //3 
+            let a = +prompt('a');
+            let b = +prompt('b');
+            let result = a + b < 4 ? "Мало." : "Много.";
+            alert(result);
+    </script>
+</body>
+
+</html>
